@@ -22,6 +22,7 @@ RUN apt-get update && apt-get install -y \
     usb-modeswitch \
     usbutils \
     vim-nox \
+    minicom \
 && rm -rf /var/lib/apt/lists/* \
 && mkdir -p /etc/chatscripts
 
