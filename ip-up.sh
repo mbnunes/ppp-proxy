@@ -32,7 +32,8 @@ echo -e "nameserver $DNS1\nnameserver $DNS2" >> /etc/resolv.conf
 logger -t ip-up-script "Removing default route..."
 ip route del default
 logger -t ip-up-script "Adding new default route via $PPP_REMOTE dev $PPP_IFACE"
-ip route add default via $PPP_REMOTE dev $PPP_IFACE
+#ip route add default via $PPP_REMOTE dev $PPP_IFACE
+ip route add default dev $PPP_IFACE
 
 logger -t ip-up-script "Verifying with: ping -I $PPP_IFACE -c 5 registro.br"
 if ping -I $PPP_IFACE -c 5 registro.br &>/tmp/ping.out; then
