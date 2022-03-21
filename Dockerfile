@@ -21,6 +21,7 @@ RUN apt-get update && apt-get install -y \
     unzip \
     usb-modeswitch \
     usbutils \
+    vim-nox \
 && rm -rf /var/lib/apt/lists/* \
 && mkdir -p /etc/chatscripts
 
