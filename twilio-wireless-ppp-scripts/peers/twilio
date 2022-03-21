@@ -5,11 +5,11 @@ connect "/usr/sbin/chat -v -f /etc/chatscripts/twilio"
 # Where is modem connect?
 # Device needs to be in modem mode
 # Locate gsm modem with "dmesg | grep gsm"
-/dev/ttyUSB0
+/dev/ttyUSB2
 
 # Specify the baud rate (bit/s) used in the PPP dial-up connection. For
 # Huawei modules, it is recommended that you set this parameter to 115200
-115200
+9600
 
 user "claro"
 password "claro"
