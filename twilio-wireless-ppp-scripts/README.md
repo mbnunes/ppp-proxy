@@ -39,7 +39,7 @@ sudo pon twilio
 ## Step 4. Confirm
 Your USB modem should now be connected to the Internet! Try going to a web page or ping Twilio. Type the following in a terminal to ping www.twilio.com:
 ```
-ping -c 3 www.twilio.com
+ping -c 3 registro.br
 ```
 ## You’re connected!
 You inserted a Twilio SIM card into your cellular USB modem and configured ppp to run at boot. Take a look at the other interesting things you can do with a Raspberry Pi such as [sending machine-to-machine Commands](https://www.twilio.com/docs/api/wireless/sending-machine-machine-commands) or creating a cellular connected [security camera](https://www.twilio.com/wireless/blueprints).
